@@ -1,0 +1,153 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Fuente principal */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%; /* Ancho del contenedor */
+    margin: auto; /* Centra el contenedor */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+/* Estilos del encabezado */
+header {
+    background: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding-top: 30px; /* Espaciado superior */
+    min-height: 70px; /* Altura mínima */
+    border-bottom: #77aaff 3px solid; /* Borde inferior */
+}
+
+header h1 {
+    float: left; /* Alinea el título a la izquierda */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+
+header nav {
+    float: right; /* Alinea el menú de navegación a la derecha */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+header nav ul {
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+    list-style: none; /* Elimina los estilos de lista */
+}
+
+header nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-left: 20px; /* Espaciado entre elementos */
+}
+
+header nav ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos de la sección "Sobre Mí" */
+.about-content {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.profile-pic {
+    width: 50%; /* Ancho de la imagen */
+    max-width: 400px; /* Ancho máximo */
+    height: auto; /* Altura automática */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Estilos de la sección "Proyectos" */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espacio entre proyectos */
+    margin-top: 20px; /* Espacio arriba del grid */
+}
+
+.project {
+    background: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Eleva el proyecto al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.project h3 {
+    margin-top: 0; /* Elimina el margen superior */
+    color: #333; /* Color del texto */
+}
+
+.project p {
+    color: #555; /* Color del texto */
+}
+
+.project a {
+    color: #77aaff; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.project a:hover {
+    text-decoration: underline; /* Subraya el enlace al hacer hover */
+}
+
+/* Estilos de la sección "Hobbies" y "Contacto" */
+#hobbies, #contact {
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos del formulario de contacto */
+form input, form textarea, form button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espacio inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+form button {
+    background: #333; /* Fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+form button:hover {
+    background: #77aaff; /* Cambia el color de fondo al hacer hover */
+}
+
+/* Estilos de los enlaces sociales */
+.social-links a {
+    margin-right: 10px; /* Espacio entre enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos del pie de página */
+footer{
+    background: #333; /* Fondo del footer */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 1px; /* Espaciado interno */
+    margin-top: auto; /* Fija el footer en la parte inferior */
+}

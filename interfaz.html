@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title>Portafolio Personal</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo CSS -->
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="container"> 
+            <h1>Portafolio</h1> <!-- Título principal -->
+            <nav>
+                <ul>
+                    <!-- Menú de navegación -->
+                    <li><a href="#" onclick="showSection('about')">Sobre Mí</a></li> <!-- Enlace a la sección "Sobre Mí" -->
+                    <li><a href="#" onclick="showSection('projects')">Proyectos</a></li> <!-- Enlace a la sección "Proyectos" -->
+                    <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li> <!-- Enlace a la sección "Hobbies" -->
+                    <li><a href="#" onclick="showSection('contact')">Contacto</a></li> <!-- Enlace a la sección "Contacto" -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección "Sobre Mí" -->
+    <section id="about" class="container section">
+        <h2>Sobre Mí</h2> <!-- Título de la sección -->
+        <div class="about-content">
+            <img src="FotoPortafolio.jpg" alt="Tu Foto" class="profile-pic"> <!-- Imagen de perfil -->
+            <div class="about-text">
+                <p>Mi nombre es Juan Jose Pinto, tengo 19 años y actualmente soy un estudiante de ingeniería de sistemas con gran interés y pasión por la ciberseguridad y el desarrollo de software.</p>
+                <p>Estudié mi bachillerato en el Colegio Benedictinos de Santa María, y actualmente estoy en tercer semestre en la universidad EIA. Destaco por mis habilidades en el entendimiento de temas complejos, al igual que un gran trabajo en equipo y una eterna curiosidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Proyectos" -->
+    <section id="projects" class="container section" style="display: none;">
+        <h2>Proyectos</h2> <!-- Título de la sección -->
+        <div class="projects-grid">
+            <!-- Proyecto 1 -->
+            <div class="project">
+                <h3>Proyecto 1</h3> <!-- Título del proyecto -->
+                <p>Este programa es una calculadora básica que permite al usuario realizar operaciones aritméticas simples como suma, resta, multiplicación y división. El usuario ingresa dos números y selecciona la operación que desea realizar. El programa muestra el resultado de la operación seleccionada.</p>
+                <p><strong>Tecnologías:</strong> Java Core, Manejo de Excepciones.</p> <!-- Tecnologías usadas -->
+                <a href="#">https://github.com/Crokiz0/Proyectos-Java</a> <!-- Enlace al proyecto -->
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Este programa calcula la nota que un estudiante necesita en un examen final para alcanzar una nota final deseada. Toma en cuenta las notas de quices, parciales y seguimientos, y realiza cálculos basados en porcentajes predefinidos. Luego, muestra la nota necesaria en el examen final.</p>
+                <p><strong>Tecnologías:</strong> Java Core, Manejo de Excepciones.</p>
+                <a href="#">https://github.com/Crokiz0/Proyectos-Java</a>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project">
+                <h3>Proyecto 3</h3>
+                <p>Este programa simula un juego en el que el usuario piensa en un número de 4 cifras y el programa "adivina" el número realizando operaciones aritméticas predefinidas. El usuario ingresa su número, el programa realiza las operaciones y luego revierte las operaciones para adivinar el número original.</p>
+                <p><strong>Tecnologías:</strong> Java Core, Manipulación de Dígitos.</p>
+                <a href="#">https://github.com/Crokiz0/Proyectos-Java</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Hobbies" -->
+    <section id="hobbies" class="container section" style="display: none;">
+        <h2>Hobbies</h2> <!-- Título de la sección -->
+        <h4>Videojuegos</h4>
+        <p>Los videojuegos no solo son una forma de entretenimiento, sino que también pueden mejorar habilidades como la resolución de problemas, la toma de decisiones y el pensamiento estratégico. Además, algunos juegos fomentan el trabajo en equipo y la comunicación, lo que es útil en cualquier entorno profesional.</p>
+            
+        <h4>Legos</h4>
+        <p>Armar Legos desarrolla la creatividad, la paciencia y la capacidad de resolución de problemas. Además, te ayuda a pensar en términos de diseño y estructura, lo que puede ser beneficioso en el campo de la ingeniería de sistemas.</p>
+            
+        <h4>Leer</h4>
+        <p>La lectura amplía tu conocimiento, mejora tu capacidad de concentración y fortalece tu pensamiento crítico. Dependiendo de lo que leas, puede complementar tu formación en ingeniería o ayudarte a desarrollar habilidades de comunicación.</p>
+            
+        <h4>Salir a conocer cosas nuevas</h4>
+        <p>Explorar nuevos lugares, conocer culturas o simplemente descubrir rincones en tu ciudad te ayuda a desarrollar una mente abierta y curiosa. Estas experiencias pueden inspirarte y brindarte nuevas perspectivas que pueden ser útiles tanto en la vida personal como profesional.</p>
+        <img src="Hobbies.jpg" alt="Hobby style" class="profile-pic"> <!-- Imagen de hobbies -->
+    </section>
+
+    <!-- Sección "Contacto" -->
+    <section id="contact" class="container section" style="display: none;">
+        <h2>Contacto</h2> <!-- Título de la sección -->
+        <p>Correo personal: juanjosepinto051@gmail.com</p> <!-- Información de contacto -->
+        <form>
+            <!-- Formulario de contacto -->
+            <input type="text" placeholder="Nombre" required> <!-- Campo de nombre -->
+            <input type="email" placeholder="Correo electrónico" required> <!-- Campo de correo -->
+            <textarea placeholder="Mensaje" required></textarea> <!-- Campo de mensaje -->
+            <button type="submit">Enviar</button> <!-- Botón de enviar -->
+        </form>
+        <div class="social-links">
+            <a href="https://github.com/Crokiz0">GitHub</a> <!-- Enlace a GitHub -->
+        </div>
+        <img src="studycat_point_up_compressed.gif" alt="Hobby style" class="profile-pic"> <!-- Imagen animada -->
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Juan Jose Pinto Gutierrez</p> <!-- Texto del footer -->
+    </footer>
+
+    <!-- Script para manejar la navegación entre secciones -->
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Muestra la sección seleccionada
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Muestra la sección "Sobre Mí" al cargar la página
+        window.onload = function() {
+            showSection('about');
+        };
+    </script>
+</body>
+</html>
